@@ -1,11 +1,40 @@
+# GitHub Pages Configuration for n8n Workflow Repository
+# Repository: cgdasacar/n8nboy_workflows
+
+# Site settings
 title: "n8n Workflow Repository"
 description: "Professional n8n workflow templates by CGdasacar"
 author: "CGdasacar"
+email: "your-email@example.com"
 url: "https://cgdasacar.github.io"
 baseurl: "/n8nboy_workflows"
 
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Include files
 include:
   - _headers
   - .nojekyll
   - workflow-index.json
   - workflows/
+
+# Exclude files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# CORS and Security Headers
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
+    Access-Control-Allow-Methods: "GET, POST, OPTIONS"
+    Access-Control-Allow-Headers: "Origin, X-Requested-With, Content-Type, Accept, Authorization"
