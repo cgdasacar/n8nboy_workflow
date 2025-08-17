@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const WORKFLOWS_DIR = path.join(__dirname, '..', 'workflow');
-const OUTPUT_FILE = path.join(__dirname, '..', 'n8nboy_workflow', 'workflow-index.json');
+const WORKFLOWS_DIR = path.join(__dirname, '..', 'workflows');
+const OUTPUT_FILE = path.join(__dirname, '..', 'n8nboy_workflows', 'workflow-index.json');
 
 function extractWorkflowMetadata(filename, content) {
   try {
