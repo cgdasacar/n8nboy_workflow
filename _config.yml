@@ -1,0 +1,11 @@
+title: "n8n Workflow Repository"
+description: "Professional n8n workflow templates by CGdasacar"
+author: "CGdasacar"
+url: "https://cgdasacar.github.io"
+baseurl: "/n8nboy_workflows"
+
+include:
+  - _headers
+  - .nojekyll
+  - workflow-index.json
+  - workflows/
