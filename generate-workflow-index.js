@@ -34,7 +34,7 @@ function extractWorkflowMetadata(filename, content) {
       id: parts[0],
       name: workflow.name || 'Untitled Workflow',
       description: workflow.description || workflow.name || 'No description available',
-      filename: filename,
+      filename: workflows/' + filename,
       triggerType: triggerType,
       nodeTypes: Array.from(nodeTypes),
       tags: keywords.filter(k => k && k.length > 2),
